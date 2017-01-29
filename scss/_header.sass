@@ -5,70 +5,72 @@ body
 
 	.navHeader
 		background-color: white
-		height: 86px
+		height: auto
 
 		.navPosistion
 			display: flex
 			flex-direction: row
-			justify-content: flex-start
+			justify-content: space-between
+			align-items: center
 
 
 			.logo
 				font-size: 60px
 				margin: 0
 				background-color: pink
-
+				margin: 10px 20px
 
 			.siteNav
 
 				ul
-					text-decoration: none
+					display: none
 					list-style: none
 					text-align: center
 					padding: 0
+					background-color: honeydew
 
 					li
 
+						a
+							display: block
+							text-decoration: none
+							color: black
+
+							&:hover
+								background: black
+								color: white
 
 
 			.mobileNavToggle
-				background: #333
+				// background-color: pink
+				height: 50px
 				width: 50px
-				height: 3px
+				margin: 0 20px 0 0
+				display: flex
+				align-items: center
+				cursor: pointer
 
+				span,
+				span:before,
+				span:after
+					content: ""
+					display: block
+					background-color: #333
+					height: 3px
+					width: 50px
+					position: relative
 
+				span:before
+					top: 15px
 
+				span:after
+					bottom: 18px
 
+				&:hover span
+					background: transparent
 
+				&:hover span:before
+					background: red
 
-
-	// .navHeader
-	// 	width: 135px
-	// 	background-color: white
-	//
-	// 	.navPosistion
-	// 		display: flex
-	// 		flex-direction: column
-	// 		align-content: space-between
-	// 		height: 100vh
-	//
-	// 		.logo
-	// 			font-size: 60px
-	// 			background-color: pink
-	// 			text-align: center
-	// 			margin: 0
-	//
-	// 		.siteNav
-	// 			background-color: pink
-	//
-	// 			ul
-	// 				list-style: none
-	//
-	// 				li
-	// 					text-align: right
-	// 					padding: 0 10px
-	// 					margin-bottom: 40px
-	//
-	// 					a
-	// 						text-decoration: none
-	// 						color: black
+				&:hover span:after
+					background: red

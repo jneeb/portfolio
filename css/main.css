@@ -178,7 +178,7 @@ body {
   padding: 0; }
   body .navHeader {
     background-color: white;
-    height: 86px; }
+    height: auto; }
     body .navHeader .navPosistion {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -187,19 +187,57 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       body .navHeader .navPosistion .logo {
         font-size: 60px;
         margin: 0;
-        background-color: pink; }
+        background-color: pink;
+        margin: 10px 20px; }
       body .navHeader .navPosistion .siteNav ul {
-        text-decoration: none;
+        display: none;
         list-style: none;
         text-align: center;
-        padding: 0; }
+        padding: 0;
+        background-color: honeydew; }
+        body .navHeader .navPosistion .siteNav ul li a {
+          display: block;
+          text-decoration: none;
+          color: black; }
+          body .navHeader .navPosistion .siteNav ul li a:hover {
+            background: black;
+            color: white; }
       body .navHeader .navPosistion .mobileNavToggle {
-        background: #333;
+        height: 50px;
         width: 50px;
-        height: 3px; }
+        margin: 0 20px 0 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        cursor: pointer; }
+        body .navHeader .navPosistion .mobileNavToggle span,
+        body .navHeader .navPosistion .mobileNavToggle span:before,
+        body .navHeader .navPosistion .mobileNavToggle span:after {
+          content: "";
+          display: block;
+          background-color: #333;
+          height: 3px;
+          width: 50px;
+          position: relative; }
+        body .navHeader .navPosistion .mobileNavToggle span:before {
+          top: 15px; }
+        body .navHeader .navPosistion .mobileNavToggle span:after {
+          bottom: 18px; }
+        body .navHeader .navPosistion .mobileNavToggle:hover span {
+          background: transparent; }
+        body .navHeader .navPosistion .mobileNavToggle:hover span:before {
+          background: red; }
+        body .navHeader .navPosistion .mobileNavToggle:hover span:after {
+          background: red; }
