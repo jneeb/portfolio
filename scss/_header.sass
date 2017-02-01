@@ -1,115 +1,87 @@
-body
+.flexWrap
 	background-color: grey
-	margin: 0
-	padding: 0
 
-	.flexWrap .navHeader
-		background-color: white
+	.mobileNav
+		display: none
+
+	.navPosistion
+		position: fixed
 		width: 100%
-
-		.navPosistion
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-
-			.navLogo
-				font-size: 60px
-				margin: 0
-				margin: 10px 20px
-
-			.siteNav
-
-				ul
-					display: none
-
-			.mobileNavBurger
-				height: 50px
-				width: 50px
-				margin: 0 20px 0 0
-				display: flex
-				align-items: center
-				cursor: pointer
-
-				span,
-				span:before,
-				span:after
-					content: ""
-					display: block
-					background-color: #333
-					height: 3px
-					width: 50px
-					position: relative
-					transition: all 0.3s ease-in-out
-
-				span:before
-					top: 15px
-
-				span:after
-					top: -18px
-
-				&:hover span
-					background: transparent
-					
-				&:hover span:before,
-				&:hover span:after
-					transform-origin: center
-					transform: rotate(45deg)
-					top: 0
-
-				&:hover span:after
-					transform: rotate(-45deg)
-					top: -3px
-
-		.mobileNav
-			position: absolute
-			margin: 170px 0 0 0
-			background: white
-			width: 100%
-			transform: translateY(-200%)
-
-			ul
-				list-style: none
-				margin: 0
-				padding: 0
-
-				li
-					text-align: center
-					margin-bottom: 60px
-
-					a
-						text-decoration: none
-						color: black
-
-@media (min-width: 732px)
-	.flexWrap .navHeader
 		background: white
-		width: 135px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
 
+		.navLogo
+			margin: 0
+			padding: 0
+			font-size: 70px
+
+
+		.desktopNav
+			display: none
+
+		.mobileNavBurger
+			height: 50px
+			width: 50px
+			margin: 0 20px 0 0
+			display: flex
+			align-items: center
+			cursor: pointer
+
+			span,
+			span:before,
+			span:after
+				content: ""
+				display: block
+				background-color: #333
+				height: 3px
+				width: 50px
+				position: relative
+				transition: all 0.3s ease-in-out
+
+			span:before
+				top: 15px
+
+			span:after
+				top: -18px
+
+			&:hover span
+				background: transparent
+
+			&:hover span:before,
+			&:hover span:after
+				transform-origin: center
+				transform: rotate(45deg)
+				top: 0
+
+			&:hover span:after
+				transform: rotate(-45deg)
+				top: -3px
+
+@media (min-width: 775px)
+	.flexWrap
 		.mobileNav
 			display: none
 
 		.navPosistion
-			flex-direction: column
 			width: 135px
+			flex-direction: column
 			height: 100vh
 			position: fixed
 			background: white
 
-			.navLogo
-				font-size: 60px
-
-
-			.siteNav
+			.desktopNav
+				display: block
+				margin: 0
+				padding: 0
+				text-align: right
 
 				ul
-					display: block
-					margin: 0
-					padding: 0
-					text-align: right
+					padding-left: 20px
 
 					li
-						padding-left: 20px
 						list-style: none
 						padding-bottom: 30px
 
