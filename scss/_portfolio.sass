@@ -1,12 +1,62 @@
 .workFlex
-	padding: 50px 0
+	padding: 50px 0 0 0
 	display: block
 
 	.col-2
+		flex: 1
 		max-width: 100%
-		background: pink
-		align-items: center
+
+		p
+			margin: 0 0 20px 0
 
 @media (min-width: 640px)
-	.workFlex .col-2
-		background: honeydew
+	.workFlex
+		display: flex
+		flex-direction: row
+		justify-content: center
+
+		.col-2
+			margin: 0 20px 0 0
+			max-width: 300px
+
+		.col-2:nth-child(2)
+			margin: 0
+
+@media (min-width: 775px)
+	.workFlex
+		margin-left: 135px
+
+		.col-2
+			max-width: 300px
+
+
+.workFlexReverse
+	padding: 50px 0 0 0
+	display: block
+
+	.col-2
+		flex: 1
+		max-width: 100%
+
+		p
+			margin: 0 0 20px 0
+
+@media (min-width: 640px)
+	.workFlexReverse
+		display: flex
+		flex-direction: row-reverse
+		justify-content: center
+
+		.col-3
+			margin: 0 0 0 20px
+			max-width: 300px
+
+		.col-3:nth-child(2)
+			margin: 0
+
+@media (min-width: 775px)
+	.workFlexReverse
+		margin-left: 135px
+
+		.col-3
+			max-width: 300px
