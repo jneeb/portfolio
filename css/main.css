@@ -402,6 +402,10 @@ sup {
   .skillsFlex .col-4 {
     padding: 10px 10px; }
 
+@media (min-width: 640px) {
+  .col-4 {
+    margin: 10px 10%; } }
+
 @media (min-width: 775px) {
   .skillsFlex {
     margin-left: 135px; } }
