@@ -1,0 +1,62 @@
+section#contact.contact
+	display: block
+	padding: 0 10px
+
+	h2
+		text-align: center
+
+	.contactFlex
+		// background: honeydew
+		// display: flex
+		// flex-direction: column
+
+		.contactLinks
+			width: 300px
+			background: pink
+
+			p
+				padding: 0
+				margin: 0
+
+		.contactForm
+			padding: 0
+			margin: 0
+
+			.row-1 input
+				width: 300px
+				height: 30px
+
+			.row-2 textarea
+				width: 300px
+
+@media (min-width: 640px)
+	.row-1
+		display: flex
+		flex-direction: row
+		justify-content: center
+
+		input
+			margin: 0 10px 0 0
+			width: 300px
+
+	.row-2
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		textarea
+			min-width: 620px
+
+@media (min-width: 775px)
+	.contactFlex
+		margin-left: 135px
+
+@media (min-width: 950px)
+	.contactFlex
+		display: flex
+		flex-direction: row
+		justify-content: center
+
+		.contactFlex
+			flex: 1

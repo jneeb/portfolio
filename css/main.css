@@ -409,3 +409,76 @@ sup {
 @media (min-width: 775px) {
   .skillsFlex {
     margin-left: 135px; } }
+
+section#contact.contact {
+  display: block;
+  padding: 0 10px; }
+  section#contact.contact h2 {
+    text-align: center; }
+  section#contact.contact .contactFlex .contactLinks {
+    width: 300px;
+    background: pink; }
+    section#contact.contact .contactFlex .contactLinks p {
+      padding: 0;
+      margin: 0; }
+  section#contact.contact .contactFlex .contactForm {
+    padding: 0;
+    margin: 0; }
+    section#contact.contact .contactFlex .contactForm .row-1 input {
+      width: 300px;
+      height: 30px; }
+    section#contact.contact .contactFlex .contactForm .row-2 textarea {
+      width: 300px; }
+
+@media (min-width: 640px) {
+  .row-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .row-1 input {
+      margin: 0 10px 0 0;
+      width: 300px; }
+  .row-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .row-2 textarea {
+      min-width: 620px; } }
+
+@media (min-width: 775px) {
+  .contactFlex {
+    margin-left: 135px; } }
+
+@media (min-width: 950px) {
+  .contactFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contactFlex .contactFlex {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; } }
