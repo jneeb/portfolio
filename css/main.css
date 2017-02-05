@@ -172,72 +172,72 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-.flexWrap {
-  background-color: grey; }
-  .flexWrap .mobileNav {
+.flexWrap .mobileNav {
+  display: none; }
+
+.flexWrap .navPosistion {
+  position: fixed;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .flexWrap .navPosistion .navLogo {
+    margin: 30px 0;
+    padding: 0 0 0 0;
+    height: 80px;
+    widows: 80px; }
+  .flexWrap .navPosistion .desktopNav {
     display: none; }
-  .flexWrap .navPosistion {
-    position: fixed;
-    width: 100%;
-    background: white;
+  .flexWrap .navPosistion .mobileNavBurger {
+    height: 50px;
+    width: 50px;
+    margin: 0 20px 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-    .flexWrap .navPosistion .navLogo {
-      margin: 0;
-      padding: 0;
-      font-size: 70px; }
-    .flexWrap .navPosistion .desktopNav {
-      display: none; }
-    .flexWrap .navPosistion .mobileNavBurger {
-      height: 50px;
+            align-items: center;
+    cursor: pointer; }
+    .flexWrap .navPosistion .mobileNavBurger span,
+    .flexWrap .navPosistion .mobileNavBurger span:before,
+    .flexWrap .navPosistion .mobileNavBurger span:after {
+      content: "";
+      display: block;
+      background-color: #333;
+      height: 3px;
       width: 50px;
-      margin: 0 20px 0 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      cursor: pointer; }
-      .flexWrap .navPosistion .mobileNavBurger span,
-      .flexWrap .navPosistion .mobileNavBurger span:before,
-      .flexWrap .navPosistion .mobileNavBurger span:after {
-        content: "";
-        display: block;
-        background-color: #333;
-        height: 3px;
-        width: 50px;
-        position: relative;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-      .flexWrap .navPosistion .mobileNavBurger span:before {
-        top: 15px; }
-      .flexWrap .navPosistion .mobileNavBurger span:after {
-        top: -18px; }
-      .flexWrap .navPosistion .mobileNavBurger:hover span {
-        background: transparent; }
-      .flexWrap .navPosistion .mobileNavBurger:hover span:before,
-      .flexWrap .navPosistion .mobileNavBurger:hover span:after {
-        -webkit-transform-origin: center;
-                transform-origin: center;
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg);
-        top: 0; }
-      .flexWrap .navPosistion .mobileNavBurger:hover span:after {
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        top: -3px; }
+      position: relative;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .flexWrap .navPosistion .mobileNavBurger span:before {
+      top: 15px; }
+    .flexWrap .navPosistion .mobileNavBurger span:after {
+      top: -18px; }
+    .flexWrap .navPosistion .mobileNavBurger:hover span {
+      background: transparent; }
+    .flexWrap .navPosistion .mobileNavBurger:hover span:before,
+    .flexWrap .navPosistion .mobileNavBurger:hover span:after {
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 0; }
+    .flexWrap .navPosistion .mobileNavBurger:hover span:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: -3px; }
 
 @media (min-width: 775px) {
   .flexWrap .mobileNav {
@@ -268,7 +268,8 @@ sup {
       visibility: hidden; } }
 
 .homeFlex {
-  background-color: pink;
+  color: #262626;
+  background-color: #d8d8d8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,12 +291,12 @@ sup {
 .col-1 {
   max-width: 300px;
   margin: 0 10px; }
-  .col-1 h1 {
+  .col-1 h1f4f4f {
     font-size: 40px; }
   .col-1 span {
     display: block;
     height: 1px;
-    background-color: black; }
+    background-color: #262626; }
 
 .col-1:nth-child(1) {
   display: none; }
@@ -314,14 +315,11 @@ sup {
       display: block;
       visibility: hidden; } }
 
-@media (min-width: 775px) {
-  .homeFlex {
-    margin-left: 135px; } }
-
 .portfolio {
   display: block;
   padding: 50px 0 50px 0;
-  background-color: red; }
+  background-color: #262626;
+  color: #d8d8d8; }
   .portfolio h2 {
     text-align: center;
     padding: 0 0 20px 0; }
@@ -392,7 +390,7 @@ sup {
 
 .skills {
   padding: 50px 0 50px 0;
-  background-color: blue; }
+  background-color: #d8d8d8; }
   .skills h2 {
     text-align: center; }
   .skills .skillsFlex {
@@ -428,14 +426,21 @@ sup {
 .contact {
   display: block;
   padding: 50px 30px 50px 30px;
-  background-color: pink; }
+  background-color: #262626;
+  color: #d8d8d8; }
   .contact h2 {
     text-align: center; }
   .contact .contactFlex .contactLinks {
     width: 300px; }
+    .contact .contactFlex .contactLinks a {
+      text-decoration: none;
+      color: inherit; }
     .contact .contactFlex .contactLinks p {
       padding: 0;
       margin: 0; }
+    .contact .contactFlex .contactLinks img {
+      width: 20px;
+      height: 20px; }
   .contact .contactFlex .contactForm {
     padding: 0;
     margin: 0; }
