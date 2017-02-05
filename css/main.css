@@ -312,19 +312,24 @@ sup {
   .homeFlex {
     margin-left: 135px; } }
 
-.workFlex {
-  padding: 50px 0 0 0;
-  display: block; }
-  .workFlex .col-2 {
+.portfolio {
+  display: block;
+  padding: 50px 0 50px 0;
+  background-color: red; }
+  .portfolio h2 {
+    margin: 0;
+    text-align: center;
+    padding: 0 0 20px 0; }
+  .portfolio .workFlex .col-2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     max-width: 100%; }
-    .workFlex .col-2 p {
+    .portfolio .workFlex .col-2 p {
       margin: 0 0 20px 0; }
 
 @media (min-width: 640px) {
-  .workFlex {
+  .portfolio .workFlex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -335,10 +340,10 @@ sup {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .workFlex .col-2 {
+    .portfolio .workFlex .col-2 {
       margin: 0 20px 0 0;
       max-width: 300px; }
-    .workFlex .col-2:nth-child(2) {
+    .portfolio .workFlex .col-2:nth-child(2) {
       margin: 0; } }
 
 @media (min-width: 775px) {
@@ -382,52 +387,60 @@ sup {
     .workFlexReverse .col-3 {
       max-width: 300px; } }
 
-.skillsFlex {
-  min-height: 600px;
-  padding: 50px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .skillsFlex .col-4 {
-    padding: 10px 10px; }
+.skills {
+  padding: 50px 0 50px 0;
+  background-color: blue; }
+  .skills h2 {
+    margin: 0;
+    text-align: center; }
+  .skills .skillsFlex {
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .skills .skillsFlex .col-4 {
+      padding: 10px 10px; }
+      .skills .skillsFlex .col-4 img {
+        width: 145px;
+        height: 145px; }
 
 @media (min-width: 640px) {
   .col-4 {
     margin: 10px 10%; } }
 
 @media (min-width: 775px) {
-  .skillsFlex {
+  .skills {
     margin-left: 135px; } }
 
-section#contact.contact {
+.contact {
   display: block;
-  padding: 0 10px; }
-  section#contact.contact h2 {
+  padding: 50px 30px 50px 0;
+  background-color: pink; }
+  .contact h2 {
     text-align: center; }
-  section#contact.contact .contactFlex .contactLinks {
-    width: 300px;
-    background: pink; }
-    section#contact.contact .contactFlex .contactLinks p {
+  .contact .contactFlex .contactLinks {
+    width: 300px; }
+    .contact .contactFlex .contactLinks p {
       padding: 0;
       margin: 0; }
-  section#contact.contact .contactFlex .contactForm {
+  .contact .contactFlex .contactForm {
     padding: 0;
     margin: 0; }
-    section#contact.contact .contactFlex .contactForm .row-1 input {
+    .contact .contactFlex .contactForm .row-1 input {
       width: 100%;
       height: 30px; }
-    section#contact.contact .contactFlex .contactForm .row-2 textarea {
+    .contact .contactFlex .contactForm .row-2 textarea {
       width: 100%; }
 
 @media (min-width: 640px) {
@@ -443,7 +456,7 @@ section#contact.contact {
         -ms-flex-pack: center;
             justify-content: center; }
     .row-1 input {
-      width: 300px;
+      min-width: 300px;
       max-width: 300px; }
   .row-2 {
     display: -webkit-box;
@@ -464,7 +477,7 @@ section#contact.contact {
       max-width: 610px; } }
 
 @media (min-width: 775px) {
-  .contactFlex {
+  .contact {
     margin-left: 135px; } }
 
 @media (min-width: 950px) {
