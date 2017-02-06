@@ -2,7 +2,7 @@
 	display: block
 	padding: 50px 30px 50px 30px
 	background-color: $darkGrey
-	color: $lightGrey	
+	color: $lightGrey
 
 	h2
 		text-align: center
@@ -12,61 +12,30 @@
 		.contactLinks
 			width: 300px
 
-			a
-				text-decoration: none
-				color: inherit
-
-			p
-				padding: 0
-				margin: 0
-
-			img
-				width: 20px
-				height: 20px
-
 		.contactForm
-			padding: 0
-			margin: 0
 
 			.row-1 input
 				width: 100%
-				height: 30px
 
 			.row-2 textarea
 				width: 100%
 
+			.row-3 button
+				float: right
+
+
 @media (min-width: 640px)
 	.row-1
 		display: flex
-		flex-direction: row
-		justify-content: center
-
-		input
-			min-width: 300px
-			max-width: 300px
-
-	.row-2
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
-
-		textarea
-			min-width: 610px
-			max-width: 610px
-
-	button
-		float: right
 
 @media (min-width: 775px)
 	.contact
 		margin-left: 135px
 
-@media (min-width: 950px)
+
+@media (min-width: 1000px)
 	.contactFlex
 		display: flex
-		flex-direction: row
-		justify-content: center
 
-		.contactFlex
-			flex: 1
+		.contactForm
+			flex-grow: 2
