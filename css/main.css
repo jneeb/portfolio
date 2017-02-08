@@ -172,9 +172,6 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-.flexWrap .mobileNav {
-  display: none; }
-
 .flexWrap .navPosistion {
   position: fixed;
   width: 100%;
@@ -226,19 +223,46 @@ sup {
       top: 15px; }
     .flexWrap .navPosistion .mobileNavBurger span:after {
       top: -18px; }
-    .flexWrap .navPosistion .mobileNavBurger:hover span {
+    .flexWrap .navPosistion .mobileNavBurger.isOpen span {
       background: transparent; }
-    .flexWrap .navPosistion .mobileNavBurger:hover span:before,
-    .flexWrap .navPosistion .mobileNavBurger:hover span:after {
+    .flexWrap .navPosistion .mobileNavBurger.isOpen span:before,
+    .flexWrap .navPosistion .mobileNavBurger.isOpen span:after {
       -webkit-transform-origin: center;
               transform-origin: center;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
       top: 0; }
-    .flexWrap .navPosistion .mobileNavBurger:hover span:after {
+    .flexWrap .navPosistion .mobileNavBurger.isOpen span:after {
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
       top: -3px; }
+
+.flexWrap .mobileNav {
+  position: absolute;
+  background: white;
+  margin: 140px 0 0 0;
+  padding: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .flexWrap .mobileNav ul {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    .flexWrap .mobileNav ul li {
+      padding: 0 0 30px 0;
+      list-style: none;
+      text-align: center; }
+      .flexWrap .mobileNav ul li a {
+        text-decoration: none;
+        color: #262626; }
+
+.flexWrap .mobileNav.isOpen {
+  display: block;
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
 
 @media (min-width: 775px) {
   .flexWrap .mobileNav {

@@ -1,8 +1,5 @@
 .flexWrap
 
-	.mobileNav
-		display: none
-
 	.navPosistion
 		position: fixed
 		width: 100%
@@ -48,18 +45,46 @@
 			span:after
 				top: -18px
 
-			&:hover span
+			&.isOpen span
 				background: transparent
 
-			&:hover span:before,
-			&:hover span:after
+			&.isOpen span:before,
+			&.isOpen span:after
 				transform-origin: center
 				transform: rotate(45deg)
 				top: 0
 
-			&:hover span:after
+			&.isOpen span:after
 				transform: rotate(-45deg)
 				top: -3px
+
+	.mobileNav
+		position: absolute
+		background: white
+		margin: 140px 0 0 0
+		padding: 0
+		width: 100%
+		transform: translateY(-100%)
+		transition: all 0.3s ease-in-out
+
+		ul
+			display: block
+			margin: 0
+			padding: 0
+
+			li
+				padding: 0 0 30px 0
+				list-style: none
+				text-align: center
+
+				a
+					text-decoration: none
+					color: $darkGrey
+
+	.mobileNav.isOpen
+		display: block
+		transform: translateY(0)
+
 
 @media (min-width: 775px)
 	.flexWrap
