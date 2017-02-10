@@ -448,9 +448,13 @@ sup {
     padding: 0;
     margin: 0; }
 
+@media (min-width: 775px) {
+  .about {
+    margin-left: 135px; } }
+
 .contact {
   display: block;
-  padding: 50px 10% 50px 10%;
+  padding: 50px 10% 20px 10%;
   background-color: #262626;
   color: #ededed; }
   .contact h2 {

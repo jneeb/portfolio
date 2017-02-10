@@ -1,11 +1,20 @@
+//mobile navbar functions
+
 var burger = document.getElementById('mobileNavBurger');
 var nav = document.getElementById('mobileNav');
+var portfolio = document.getElementById('mobilePortfolioLink');
+var about = document.getElementById('mobileAboutLink');
+var contact = document.getElementById('mobileContactLink');
 
 console.log(burger.className, nav.className);
 
-burger.onclick = navFunction;
+burger.onclick = burgerOpen;
+portfolio.onclick = navClose;
+about.onclick = navClose;
+contact.onclick = navClose;
 
-function navFunction() {
+
+function burgerOpen() {
 	if (burger.className !== "mobileNavBurger isOpen" && nav.className !== "mobileNav isOpen") {
 		burger.className += " isOpen";
 		nav.className += " isOpen";
@@ -14,6 +23,14 @@ function navFunction() {
 		nav.classList.remove('isOpen');
 	}
 }
+
+function navClose() {
+	if (burger.className == "mobileNavBurger isOpen" && nav.className == "mobileNav isOpen") {
+		burger.classList.remove("isOpen");
+		nav.classList.remove("isOpen");
+	} 
+}
+
 
 // google maps function
 
