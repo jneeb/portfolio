@@ -6,13 +6,10 @@ var portfolio = document.getElementById('mobilePortfolioLink');
 var about = document.getElementById('mobileAboutLink');
 var contact = document.getElementById('mobileContactLink');
 
-console.log(burger.className, nav.className);
-
 burger.onclick = burgerOpen;
 portfolio.onclick = navClose;
 about.onclick = navClose;
 contact.onclick = navClose;
-
 
 function burgerOpen() {
 	if (burger.className !== "mobileNavBurger isOpen" && nav.className !== "mobileNav isOpen") {
@@ -28,7 +25,9 @@ function navClose() {
 	if (burger.className == "mobileNavBurger isOpen" && nav.className == "mobileNav isOpen") {
 		burger.classList.remove("isOpen");
 		nav.classList.remove("isOpen");
-	} 
+	} else {
+		return false;
+	}
 }
 
 

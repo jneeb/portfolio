@@ -195,7 +195,6 @@ sup {
     height: 80px;
     widows: 80px; }
   .flexWrap .navPosistion .desktopNav {
-    font-family: "Rubik", sans-serif;
     display: none; }
   .flexWrap .navPosistion .mobileNavBurger {
     height: 50px;
@@ -238,7 +237,7 @@ sup {
       top: -3px; }
 
 .flexWrap .mobileNav {
-  font-family: "Rubik", sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: fixed;
   background: white;
   margin: 140px 0 0 0;
@@ -290,6 +289,7 @@ sup {
           list-style: none;
           padding-bottom: 30px; }
           .flexWrap .navPosistion .desktopNav ul li a {
+            font-family: "Montserrat", sans-serif;
             text-decoration: none;
             color: #262626; }
     .flexWrap .navPosistion .mobileNavBurger {
@@ -353,7 +353,7 @@ sup {
   background-color: #262626;
   color: #ededed; }
   .portfolio h2 {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #ededed;
     margin: 0;
     padding: 0 0 30px 0;
@@ -365,13 +365,30 @@ sup {
     max-width: 100%;
     text-align: center; }
     .portfolio .workFlex .col-2 h4 {
-      font-family: "Rubik", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     .portfolio .workFlex .col-2 p {
-      font-family: "Farsan", cursive; }
+      font-family: "Open Sans", sans-serif; }
     .portfolio .workFlex .col-2 img {
       padding: 0;
       width: 300px;
       height: 175px; }
+
+.buttonLight {
+  background-color: inherit;
+  color: #ededed;
+  border-color: #3654f9;
+  border-radius: 60px;
+  height: 50px;
+  width: 150px;
+  border-style: solid;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .buttonLight:hover {
+    background-color: #3654f9;
+    border: none;
+    color: #262626;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
 
 @media (min-width: 640px) {
   .portfolio .workFlex {
@@ -411,9 +428,9 @@ sup {
       width: 300px;
       height: 175px; }
     .workFlexReverse .col-3 h4 {
-      font-family: "Rubik", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     .workFlexReverse .col-3 p {
-      font-family: "Farsan", cursive; }
+      font-family: "Open Sans", sans-serif; }
 
 @media (min-width: 640px) {
   .workFlexReverse {
@@ -443,7 +460,8 @@ sup {
   margin: 0;
   padding: 50px 0; }
   .about h2 {
-    font-family: "Rubik", sans-serif;
+    color: #262626;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     padding: 0;
     margin: 0; }
@@ -458,14 +476,13 @@ sup {
   background-color: #262626;
   color: #ededed; }
   .contact h2 {
-    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #ededed;
     margin: 0;
     padding: 0 0 30px 0;
     text-align: center; }
   .contact .contactFlex .contactLinks {
-    font-family: "Farsan", cursive;
-    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
     width: 300px; }
   .contact .contactFlex .contactForm .row-1 {
     margin: 0 0 20px 0; }
