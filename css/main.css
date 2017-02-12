@@ -342,7 +342,11 @@ sup {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 600px; }
+    height: 600px;
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/MQZZI6LE5H.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; }
     .homeFlex .col-1:nth-child(1) {
       display: block;
       visibility: hidden; } }
@@ -376,7 +380,7 @@ sup {
 .buttonLight {
   background-color: inherit;
   color: #ededed;
-  border-color: #3654f9;
+  border-color: #1e8dff;
   border-radius: 60px;
   height: 50px;
   width: 150px;
@@ -384,7 +388,7 @@ sup {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
   .buttonLight:hover {
-    background-color: #3654f9;
+    background-color: #1e8dff;
     border: none;
     color: #262626;
     -webkit-transform: scale(1.05);
@@ -487,25 +491,35 @@ sup {
   .contact .contactFlex .contactForm .row-1 {
     margin: 0 0 20px 0; }
     .contact .contactFlex .contactForm .row-1 input {
+      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: none;
+      background: inherit;
       height: 30px;
-      padding: 0;
-      margin: 0;
-      border: 0;
+      padding: 5px 10px;
+      margin: 10px 0 0 0;
+      border: 2px solid #ededed;
       width: 100%; }
   .contact .contactFlex .contactForm .row-2 textarea {
-    padding: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: inherit;
+    border-color: #ededed;
+    padding: 5px 10px;
     margin: 0;
-    border: 0;
+    border: 2px solid #ededed;
     width: 100%;
     resize: none; }
   .contact .contactFlex .contactForm .row-3 button {
     float: right; }
 
 @media (min-width: 640px) {
-  .row-1 {
+  .contact .contactFlex .contactForm .row-1 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+    .contact .contactFlex .contactForm .row-1 input {
+      margin: 0; } }
 
 @media (min-width: 775px) {
   .contact {

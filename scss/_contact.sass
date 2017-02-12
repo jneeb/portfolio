@@ -24,16 +24,24 @@
 				margin: 0 0 20px 0
 
 				input
+					border-radius: 5px
+					box-sizing: border-box
+					box-shadow: none
+					background: inherit
 					height: 30px
-					padding: 0
-					margin: 0
-					border: 0
+					padding: 5px 10px
+					margin: 10px 0 0 0
+					border: 2px solid $lightGrey
 					width: 100%
 
 			.row-2 textarea
-				padding: 0
+				border-radius: 5px
+				box-sizing: border-box
+				background-color: inherit
+				border-color: $lightGrey
+				padding: 5px 10px
 				margin: 0
-				border: 0
+				border: 2px solid $lightGrey
 				width: 100%
 				resize: none
 
@@ -42,8 +50,11 @@
 
 
 @media (min-width: 640px)
-	.row-1
+	.contact .contactFlex .contactForm .row-1
 		display: flex
+
+		input
+			margin: 0
 
 @media (min-width: 775px)
 	.contact
