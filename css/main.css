@@ -342,8 +342,8 @@ sup {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 600px;
-    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/MQZZI6LE5H.jpg);
+    height: 700px;
+    background: url(../img/skyline.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom; }
