@@ -75,13 +75,26 @@
 			padding: 0
 
 			li
-				padding: 0 0 30px 0
 				list-style: none
 				text-align: center
 
 				a
+					padding: 15px 0 15px 0
 					text-decoration: none
 					color: $darkGrey
+					display: block
+
+				&:nth-child(1)
+					a
+						padding: 15px 0 15px 0
+
+				&:hover
+					a
+						color: $blue
+
+				&:active
+					a
+						color: $blue
 
 	.mobileNav.isOpen
 		display: block
@@ -110,18 +123,31 @@
 				text-align: right
 
 				ul
+					margin: 0
 					padding-left: 20px
+					// display: block
 
 					li
 						list-style: none
-						padding-bottom: 30px
+						// padding: 30px 0
+						// padding-bottom: 30px
+						// display: block
 
 						a
 							font-family: $headerFont
 							text-decoration: none
 							color: $darkGrey
+							padding: 30px 0
+							display: block
+
+						i
+							transform: rotate(90deg)
+							display: none
+
 
 						&:hover
+							a
+								color: $blue
 
 			.mobileNavBurger
 				visibility: hidden
