@@ -173,6 +173,7 @@ sup {
   vertical-align: baseline; }
 
 .flexWrap .navPosistion {
+  z-index: 1;
   position: fixed;
   width: 100%;
   background: white;
@@ -190,10 +191,10 @@ sup {
       -ms-flex-align: center;
           align-items: center; }
   .flexWrap .navPosistion .navLogo {
-    margin: 30px 0;
+    margin: 15px 0;
     padding: 0 0 0 10px;
-    height: 80px;
-    widows: 80px; }
+    height: 70px;
+    widows: 70px; }
   .flexWrap .navPosistion .desktopNav {
     display: none; }
   .flexWrap .navPosistion .mobileNavBurger {
@@ -237,10 +238,11 @@ sup {
       top: -3px; }
 
 .flexWrap .mobileNav {
+  z-index: 1;
   font-family: "Montserrat", sans-serif;
   position: fixed;
   background: white;
-  margin: 140px 0 0 0;
+  margin: 104px 0 0 0;
   padding: 0;
   width: 100%;
   -webkit-transform: translateY(-100%);
@@ -297,7 +299,9 @@ sup {
 
 .homeFlex {
   color: #262626;
-  background-color: #ededed;
+  background: url(/img/skylineEdit.png);
+  background-size: cover;
+  background-position: bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,11 +320,21 @@ sup {
   text-align: center;
   height: 100vh;
   font-family: "Pacifico", cursive; }
+  .homeFlex .parallax {
+    position: fixed;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
 
 .col-1 {
   max-width: 300px;
   margin: 0 10px;
-  position: fixed; }
+  position: fixed;
+  z-index: -1; }
   .col-1 img {
     height: 60px; }
   .col-1 h4 {
@@ -331,35 +345,29 @@ sup {
     height: 1px;
     background-color: #262626; }
 
-.col-1:nth-child(1) {
-  display: none; }
-
-@media (min-width: 640px) {
+@media (min-width: 775px) {
   .homeFlex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 700px;
-    background: url(../img/skyline.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom; }
-    .homeFlex .col-1:nth-child(1) {
-      display: block;
-      visibility: hidden; } }
+    margin-left: 135px;
+    height: 700px; }
+    .homeFlex .parallax {
+      margin-left: 135px;
+      height: 700px; } }
+
+@media (min-width: 1500px) {
+  .homeFlex {
+    height: 850px; }
+    .homeFlex .parallax {
+      height: 850px; } }
 
 .portfolio {
+  position: relative;
   display: block;
   padding: 50px 0 50px 0;
-  background-color: #262626;
-  color: #ededed; }
+  background-color: #eeeeee;
+  color: #262626; }
   .portfolio h2 {
     font-family: "Montserrat", sans-serif;
-    color: #ededed;
+    color: #262626;
     margin: 0;
     padding: 0 0 30px 0;
     text-align: center; }
@@ -380,7 +388,7 @@ sup {
 
 .buttonLight {
   background-color: inherit;
-  color: #ededed;
+  color: #262626;
   border-color: #1e8dff;
   border-radius: 60px;
   height: 50px;
@@ -460,29 +468,67 @@ sup {
     max-width: 300px; } }
 
 .about {
-  min-height: 400px;
-  background-color: #ededed;
+  position: relative;
+  background-color: #ffffff;
   margin: 0;
-  padding: 50px 0; }
+  padding: 50px 10% 50px 10%; }
   .about h2 {
     color: #262626;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     padding: 0;
-    margin: 0; }
+    margin: 0 0 30px 0; }
+  .about .aboutFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .about .aboutFlex span {
+      float: right;
+      display: block;
+      height: 150px;
+      width: 150px;
+      background: pink;
+      border-radius: 200px; }
+    .about .aboutFlex p {
+      text-align: center;
+      padding: 0; }
 
 @media (min-width: 775px) {
   .about {
     margin-left: 135px; } }
 
+@media (min-width: 1000px) {
+  .about .aboutFlex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .about .aboutFlex p {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin: 0;
+      padding: 0 0 0 50px; } }
+
 .contact {
+  position: relative;
   display: block;
   padding: 50px 10% 20px 10%;
-  background-color: #262626;
-  color: #ededed; }
+  background-color: #eeeeee;
+  color: #262626; }
   .contact h2 {
     font-family: "Montserrat", sans-serif;
-    color: #ededed;
+    color: #262626;
     margin: 0;
     padding: 0 0 30px 0;
     text-align: center; }
@@ -499,16 +545,16 @@ sup {
       height: 30px;
       padding: 5px 10px;
       margin: 10px 0 0 0;
-      border: 2px solid #ededed;
+      border: 2px solid #262626;
       width: 100%; }
   .contact .contactFlex .contactForm .row-2 textarea {
     border-radius: 5px;
     box-sizing: border-box;
     background-color: inherit;
-    border-color: #ededed;
+    border-color: #262626;
     padding: 5px 10px;
     margin: 0;
-    border: 2px solid #ededed;
+    border: 2px solid #262626;
     width: 100%;
     resize: none; }
   .contact .contactFlex .contactForm .row-3 button {
@@ -527,26 +573,30 @@ sup {
     margin-left: 135px; } }
 
 @media (min-width: 1000px) {
-  .contactFlex {
+  .contact .contactFlex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .contactFlex .contactForm {
+    .contact .contactFlex .contactForm {
       -webkit-box-flex: 2;
           -ms-flex-positive: 2;
               flex-grow: 2; }
-      .contactFlex .contactForm .row-1 {
+      .contact .contactFlex .contactForm .row-1 {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+        .contact .contactFlex .contactForm .row-1 input {
+          margin: 10px 0 0 0; } }
 
 @media (min-width: 1150px) {
-  .contactFlex .contactForm .row-1 {
+  .contact .contactFlex .contactForm .row-1 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row; }
+    .contact .contactFlex .contactForm .row-1 input {
+      margin: 0; } }
 
 @media (min-width: 550px) {
   #map {

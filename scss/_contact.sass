@@ -1,12 +1,13 @@
 .contact
+	position: relative
 	display: block
 	padding: 50px 10% 20px 10%
-	background-color: $darkGrey
-	color: $lightGrey
+	background-color: #eeeeee
+	color: $darkGrey
 
 	h2
 		font-family: $headerFont
-		color: $lightGrey
+		color: $darkGrey
 		margin: 0
 		padding: 0 0 30px 0
 		text-align: center
@@ -31,17 +32,17 @@
 					height: 30px
 					padding: 5px 10px
 					margin: 10px 0 0 0
-					border: 2px solid $lightGrey
+					border: 2px solid $darkGrey
 					width: 100%
 
 			.row-2 textarea
 				border-radius: 5px
 				box-sizing: border-box
 				background-color: inherit
-				border-color: $lightGrey
+				border-color: $darkGrey
 				padding: 5px 10px
 				margin: 0
-				border: 2px solid $lightGrey
+				border: 2px solid $darkGrey
 				width: 100%
 				resize: none
 
@@ -62,7 +63,7 @@
 
 
 @media (min-width: 1000px)
-	.contactFlex
+	.contact .contactFlex
 		display: flex
 
 		.contactForm
@@ -71,9 +72,15 @@
 			.row-1
 				flex-direction: column
 
+				input
+					margin: 10px 0 0 0
+					
 @media (min-width: 1150px)
-	.contactFlex .contactForm .row-1
+	.contact .contactFlex .contactForm .row-1
 		flex-direction: row
+
+		input
+			margin: 0
 
 @media (min-width: 550px)
 	#map

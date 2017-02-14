@@ -1,16 +1,44 @@
 .about
-	min-height: 400px
-	background-color: $lightGrey
+	position: relative
+	// min-height: 400px
+	background-color: #ffffff
 	margin: 0
-	padding: 50px 0
+	padding: 50px 10% 50px 10%
 
 	h2
 		color: $darkGrey
 		font-family: $headerFont
 		text-align: center
 		padding: 0
-		margin: 0
+		margin: 0 0 30px 0
+
+	.aboutFlex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		span
+			float: right
+			display: block
+			height: 150px
+			width: 150px
+			background: pink
+			border-radius: 200px
+
+		p
+			text-align: center
+			padding: 0
 
 @media (min-width: 775px)
 	.about
 		margin-left: 135px
+
+@media (min-width: 1000px)
+	.about .aboutFlex
+		flex-direction: row
+
+		p
+			flex: 1
+			margin: 0
+			padding: 0 0 0 50px
