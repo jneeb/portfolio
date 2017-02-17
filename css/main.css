@@ -546,8 +546,8 @@ sup {
         margin: 10px 0 0 0;
         border: 2px solid #262626;
         width: 100%; }
-      .contact .contactFlex .contactForm .row-1:active {
-        border: 0px; }
+        .contact .contactFlex .contactForm .row-1 input:focus {
+          outline: none; }
     .contact .contactFlex .contactForm .row-2 textarea {
       border-radius: 5px;
       box-sizing: border-box;
@@ -558,6 +558,8 @@ sup {
       border: 2px solid #262626;
       width: 100%;
       resize: none; }
+      .contact .contactFlex .contactForm .row-2 textarea:focus {
+        outline: none; }
     .contact .contactFlex .contactForm .row-3 a {
       float: right; }
     .contact .contactFlex .contactForm .test {
