@@ -562,34 +562,6 @@ sup {
       float: right; }
     .contact .contactFlex .contactForm .test {
       margin: 50px 0 0 0; }
-      .contact .contactFlex .contactForm .test input[type="text"] {
-        box-sizing: border-box;
-        width: 100%;
-        height: calc(4em + 1px);
-        margin: 0 0 1em;
-        padding: 1em;
-        border: 1px solid #ccc;
-        background: #fff;
-        resize: none;
-        outline: none; }
-      .contact .contactFlex .contactForm .test input[type="text"][required]:focus {
-        border-color: #00bafa; }
-      .contact .contactFlex .contactForm .test input[type="text"][required]:focus + label[placeholder]:before {
-        color: #00bafa; }
-      .contact .contactFlex .contactForm .test input[type="text"][required]:focus + label[placeholder]:before,
-      .contact .contactFlex .contactForm .test input[type="text"][required]:valid + label[placeholder]:before {
-        -webkit-transition-duration: .2s;
-                transition-duration: .2s;
-        -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
-                transform: translate(0, -1.5em) scale(0.9, 0.9); }
-      .contact .contactFlex .contactForm .test input[type="text"][required]:invalid + label[placeholder][alt]:before {
-        content: attr(alt); }
-      .contact .contactFlex .contactForm .test input[type="text"][required] + label[placeholder] {
-        display: block;
-        pointer-events: none;
-        line-height: 1em;
-        margin-top: calc(-3em - 2px);
-        margin-bottom: calc((3em - 1em) + 2px); }
 
 @media (min-width: 640px) {
   .contact .contactFlex .contactForm .row-1 {
