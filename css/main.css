@@ -257,7 +257,7 @@ sup {
       list-style: none;
       text-align: center; }
       .flexWrap .mobileNav ul li a {
-        padding: 15px 0 15px 0;
+        padding: 15 0 15px 0;
         text-decoration: none;
         color: #262626;
         display: block; }
@@ -401,22 +401,28 @@ sup {
       width: 300px;
       height: 175px; }
 
-.buttonLight {
-  background-color: inherit;
-  color: #262626;
-  border-color: #1e8dff;
-  border-radius: 60px;
-  height: 50px;
-  width: 150px;
-  border-style: solid;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .buttonLight:hover {
-    background-color: #1e8dff;
-    border: none;
-    color: #262626;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
+.buttonLight .buttonLight:link, .buttonLight:visited {
+  color: #2c3e50;
+  line-height: 1em;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0;
+  border: 0.2em solid #2c3e50;
+  padding: 0.8em;
+  text-align: center;
+  -webkit-transition: 0.25s box-shadow, 0.25s -webkit-transform;
+  transition: 0.25s box-shadow, 0.25s -webkit-transform;
+  transition: 0.25s box-shadow, 0.25s transform;
+  transition: 0.25s box-shadow, 0.25s transform, 0.25s -webkit-transform; }
+  .buttonLight .buttonLight:link:hover, .buttonLight:visited:hover {
+    box-shadow: 0 4em 0 0 #2c3e50 inset, 0em 0em 0 0 #bbb;
+    -webkit-transform: translate(0.3em, 0.2em);
+            transform: translate(0.3em, 0.2em);
+    color: #fff; }
 
 @media (min-width: 640px) {
   .portfolio .workFlex {
