@@ -533,76 +533,18 @@ sup {
     font-family: "Open Sans", sans-serif;
     width: 300px;
     padding: 0 0 30px 0; }
-  .contact .contactFlex #contactForm {
-    padding: 0 0 30px 0; }
-    .contact .contactFlex #contactForm .row-1 {
-      margin: 0 0 10px 0; }
-      .contact .contactFlex #contactForm .row-1 input {
-        border-radius: 5px;
-        box-sizing: border-box;
-        box-shadow: none;
-        background: inherit;
-        height: 30px;
-        padding: 5px 10px;
-        margin: 10px 0 0 0;
-        border: 2px solid #262626;
-        width: 100%; }
-        .contact .contactFlex #contactForm .row-1 input:focus {
-          outline: none; }
-    .contact .contactFlex #contactForm .row-2 textarea {
-      border-radius: 5px;
-      box-sizing: border-box;
-      background-color: inherit;
-      border-color: #262626;
-      padding: 5px 10px;
-      margin: 0;
-      border: 2px solid #262626;
+  .contact .contactFlex #contactForm table {
+    width: 100%; }
+    .contact .contactFlex #contactForm table input {
       width: 100%;
-      resize: none; }
-      .contact .contactFlex #contactForm .row-2 textarea:focus {
-        outline: none; }
-    .contact .contactFlex #contactForm .row-3 a {
-      float: right; }
-    .contact .contactFlex #contactForm .test {
-      margin: 50px 0 0 0; }
-
-@media (min-width: 640px) {
-  .contact .contactFlex #contactForm .row-1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .contact .contactFlex #contactForm .row-1 input {
-      margin: 0; } }
+      box-sizing: border-box; }
+    .contact .contactFlex #contactForm table textarea {
+      width: 100%;
+      box-sizing: border-box; }
 
 @media (min-width: 775px) {
   .contact {
     margin-left: 135px; } }
-
-@media (min-width: 1000px) {
-  .contact .contactFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .contact .contactFlex #contactForm {
-      -webkit-box-flex: 2;
-          -ms-flex-positive: 2;
-              flex-grow: 2; }
-      .contact .contactFlex #contactForm .row-1 {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        .contact .contactFlex #contactForm .row-1 input {
-          margin: 10px 0 0 0; } }
-
-@media (min-width: 1150px) {
-  .contact .contactFlex #contactForm .row-1 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .contact .contactFlex #contactForm .row-1 input {
-      margin: 0; } }
 
 @media (min-width: 550px) {
   #map {

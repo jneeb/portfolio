@@ -45,7 +45,7 @@ if($errors) {
 }
 
 // Send the email
-$to = "YOUR_EMAIL";
+$to = "neebjustin@gmail.com";
 $subject = "Contact Form: $name";
 $message = "$message";
 $headers = "From: $email";
