@@ -533,6 +533,9 @@ sup {
     font-family: "Open Sans", sans-serif;
     width: 300px;
     padding: 0 0 30px 0; }
+    .contact .contactFlex .contactLinks a img {
+      height: 40px;
+      width: 40px; }
   .contact .contactFlex #contactForm {
     padding: 0 0 30px 0; }
     .contact .contactFlex #contactForm .row-1 {
@@ -549,6 +552,8 @@ sup {
         width: 100%; }
         .contact .contactFlex #contactForm .row-1 input:focus {
           outline: none; }
+      .contact .contactFlex #contactForm .row-1 #contactName {
+        margin: 0 10px 0 0; }
     .contact .contactFlex #contactForm .row-2 textarea {
       border-radius: 5px;
       box-sizing: border-box;
