@@ -536,7 +536,7 @@ sup {
   .contact .contactFlex #contactForm {
     padding: 0 0 30px 0; }
     .contact .contactFlex #contactForm .row-1 {
-      margin: 0 0 20px 0; }
+      margin: 0 0 10px 0; }
       .contact .contactFlex #contactForm .row-1 input {
         border-radius: 5px;
         box-sizing: border-box;
@@ -561,7 +561,7 @@ sup {
       resize: none; }
       .contact .contactFlex #contactForm .row-2 textarea:focus {
         outline: none; }
-    .contact .contactFlex #contactForm .row-3 a {
+    .contact .contactFlex #contactForm .row-3 input {
       float: right; }
     .contact .contactFlex #contactForm .test {
       margin: 50px 0 0 0; }
