@@ -3,7 +3,6 @@
 	<head>
 			<meta charset="utf-8" />
 			<title>Justin Neeb | Toronto Front-End Developer</title>
-			<meta name="robots" content="noindex">
 			<link rel="stylesheet" href="/css/main.css" media="screen" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="icon" href="img/favicon.ico">
@@ -37,7 +36,6 @@
 				<div id="landing" class="homeFlex">
 					<div class="col-1">
 						<img src="img/homeTextGrey.png" />
-						<!-- <span></span> -->
 						<h4>Front-End Developer.</h4>
 					</div>
 				 <img src="img/background.png" alt="Skyline" class="parallax">
@@ -56,6 +54,17 @@
 							<a href="#" class="btn">Visit Website</a>
 						</div>
 					</div>
+					<div class="workFlexReverse">
+						<div class="col-3">
+							<img src="img/portfolioPicture.png" alt="Responsive Design">
+						</div>
+						<div class="col-3">
+							<h4>Responsive Web Design</h4>
+							<p>
+								Websites that are made to look good on any device.
+							</p>
+							<a href="#" class="btn">Visit Website</a>
+						</div>
 					</div>
 				</section>
 				<section id="about" class="about">
@@ -81,7 +90,7 @@
 							<a href="https://github.com/jneeb"><img src="img/github.png" alt="Github"></a>
 						</div>
 						<form id="contactForm" action="form.php" method="post">
-							<input type="hidden" name="token" value="<?php echo $newToken; ?>">
+							<input type="hidden" name="token" value="<?php echo $newToken; ?>" />
 							<div class="row-1">
 								<input type="text" id="contactName" placeholder="Name" name="name"/>
 								<input type="text" placeholder="Email" name="Email"/>
